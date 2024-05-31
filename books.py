@@ -44,3 +44,4 @@ async def read_author_by_category(book_author: str, category: str):
 @app.post("/books/create_book")
 async def create_book(new_book=Body()):
         BOOKS.append(new_book)
+
